@@ -1,6 +1,7 @@
 # import
 import array as ar
 
+
 # Implementare l’algoritmo di Euclide (pag. 13)
 def euclid(a, b):
     gcd = 0
