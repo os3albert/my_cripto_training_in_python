@@ -51,6 +51,7 @@ def ordine(p, b):
         if algo_esponenzazione(b, k, p) == 1:
             return k
         k = k + 1
+        
 
 def algoShanksTonelli(n, p):
     '''
