@@ -2,7 +2,7 @@
 import array as ar
 
 
-# Implementare l’algoritmo di Euclide (pag. 13)
+# Implementare l’algoritmo di Euclide
 def euclid(a, b):
     gcd = 0
     r = 0
@@ -118,7 +118,7 @@ class Congruence():
             i = i + 1
         return j
 
-    # Implementare l’algoritmo per calcolare la funzione di Eulero di un intero n, utilizzando il teorema 2.17.2. Questo programmino ci servira' per poter implementare i due programmi qui di seguito proposti.
+    # Implementare l’algoritmo per calcolare la funzione di Eulero di un intero n
     def fiEulero(self):
         count = 0
         i = 0
@@ -128,7 +128,8 @@ class Congruence():
             i = i + 1
         return count
 
-    # Implementare l’algoritmo per calcolare l’ordine di un elemento in un gruppo (teorema 2.14.1): il gruppo utilizzato sara’ il gruppo moltiplicativo degli interi modulo un primo p.
+    # Implementare l’algoritmo per calcolare l’ordine di un elemento in un gruppo:
+    # il gruppo utilizzato sara’ il gruppo moltiplicativo degli interi modulo un primo p.
     def ordineElemG(self, elemento):
         i = 0
         while self.redux(elemento ** i) != 1:
@@ -234,7 +235,7 @@ def fermat_theorem(a, m):
 nCong = Congruence(10) 
 print("103, modulo 10:", nCong.redux(103))
 
-# Implementare il Crivello di Eratostene (esercizio 1.12.24) per avere a disposizione la lista dei primi minori di un certo numero naturale n.
+# Implementare il Crivello di Eratostene per avere a disposizione la lista dei primi minori di un certo numero naturale n.
 def completaArray(num):
     return list(range(0, num + 1))
 
@@ -270,7 +271,7 @@ def crivelloDiEratostene(n):
         i = i + 1
     return array_primi
 
-#mostra 100000 numeri primi usando il crivello di eratostene
+# mostra 100000 numeri primi usando il crivello di eratostene
 print(crivelloDiEratostene(100000))
 
 import random
@@ -301,7 +302,7 @@ visualizza = input("per visualizzare il cifrario di Cesare digita:\ns per visual
 if visualizza == "s" :
     print(cifrarioCesar(f))
 '''
-#dico se 89 è un numero primo
+# dico se 89 è un numero primo
 n = 89
 nroot = n ** (1 / 2)
 nprime = crivelloDiEratostene(int(n ** (1 / 2)))
